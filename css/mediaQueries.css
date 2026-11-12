@@ -1,0 +1,211 @@
+
+/* Media Queries para Diseño Responsivo */
+
+/* Dispositivos móviles pequeños (hasta 480px) */
+@media (max-width: 480px) {
+    /* Header */
+    header {
+        height: 380px;
+    }
+    
+    .header-tittle-container h1 {
+        font-size: 2rem;
+    }
+    
+    .header-tittle-container .header-button {
+        top: 310px;
+    }
+    
+    /* Tablas */
+    .main-tables-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main-currency-table, .main-comission-table {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    
+    /* Cards */
+    .product-cards-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-detail-card,
+    .product-detail-card-eye,
+    .product-detail-coin,
+    .product-detail-check {
+        min-width: 260px;
+        margin: 10px auto;
+    }
+    
+    /* Plans */
+    .plans-container-slider {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .plans-container-card,
+    .plans-container-card-number2,
+    .plans-container-card-number3 {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    /* Footer */
+    footer {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    footer section {
+        width: 100%;
+        padding: 20px 0;
+    }
+}
+
+/* Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Header */
+    .header-tittle-container h1 {
+        font-size: 2.2rem;
+    }
+    
+    /* Tablas */
+    .main-tables-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main-currency-table, .main-comission-table {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    
+    /* Cards */
+    .product-cards-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    
+    .product-detail-card,
+    .product-detail-card-eye,
+    .product-detail-coin,
+    .product-detail-check {
+        min-width: 220px;
+    }
+    
+    /* Plans */
+    .plans-container-slider {
+        gap: 30px;
+    }
+    
+    .plans-container-card,
+    .plans-container-card-number2,
+    .plans-container-card-number3 {
+        min-width: 200px;
+    }
+}
+
+/* Tablets grandes y pequeños escritorios (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Header */
+    .header-tittle-container {
+        max-width: 700px;
+    }
+    
+    /* Tablas */
+    .main-currency-table, .main-comission-table {
+        max-width: 400px;
+    }
+    
+    /* Cards */
+    .product-cards-container {
+        max-width: 800px;
+        gap: 25px;
+    }
+    
+    /* Plans */
+    .plans-container-slider {
+        gap: 40px;
+    }
+}
+
+/* Escritorios grandes (1025px en adelante) */
+@media (min-width: 1025px) {
+    /* Header */
+    header {
+        height: 400px;
+    }
+    
+    .header-tittle-container {
+        max-width: 800px;
+    }
+    
+    .header-tittle-container h1 {
+        font-size: 3rem;
+        line-height: 3.2rem;
+    }
+    
+    .header-tittle-container p {
+        font-size: 1.6rem;
+    }
+    
+    .header-tittle-container .header-button {
+        top: 320px;
+        width: 250px;
+        font-size: 1.6rem;
+    }
+    
+    /* Main */
+    .main-exchange-container h2 {
+        font-size: 2.8rem;
+    }
+    
+    .main-exchange-container p {
+        font-size: 1.6rem;
+    }
+    
+    /* Tablas */
+    .main-tables-container {
+        max-width: 900px;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+    
+    /* Cards */
+    .product-cards-container {
+        max-width: 1200px;
+        gap: 30px;
+    }
+    
+    /* Plans */
+    .plans-container-slider {
+        gap: 50px;
+    }
+    
+    .plans-tittle h2 {
+        font-size: 2.8rem;
+    }
+    
+    .plans-tittle p {
+        font-size: 1.6rem;
+    }
+}
+
+/* Orientación landscape para dispositivos móviles */
+@media (max-height: 500px) and (orientation: landscape) {
+    header {
+        height: 450px;
+    }
+    
+    .header-tittle-container .header-button {
+        top: 380px;
+    }
+    
+    .bitcoin-image-container {
+        height: 70vh;
+    }
+}
